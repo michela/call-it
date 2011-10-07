@@ -4,6 +4,12 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+#top {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 h1
 {
 	font-family:"Helvetica Neue";
