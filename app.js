@@ -26,6 +26,10 @@ app.configure('production', function(){
   app.use(express.errorHandler()); 
 });
 
+// CMS
+
+var campaign_url = "http://is.gd/callit";
+
 // Routes
 
 app.get('/', function(req, res){
@@ -47,7 +51,7 @@ app.get('/auto', function(req, res){
 app.get('/auto2', function(req, res){
   res.render('auto', {
     title: 'Update your networks',
-	layout: 'frameset-networks'
+	layout: 'frameset-networks',
   });
 });
 app.get('/auto3', function(req, res){
@@ -65,6 +69,9 @@ app.get('/step1', function(req, res){
 app.get('/step2', function(req, res){
   res.render('step2', {
     title: 'Update your Networks',
+	locals: {
+		campaign_url : campaign_url
+	}
   });
 });
 app.get('/step3', function(req, res){

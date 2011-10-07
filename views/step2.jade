@@ -5,6 +5,7 @@ div(id="one",class="panel")
     p Update your status, share the story
         br
         "
-        i #callbullshit @clubsaustralia @banjosydney @page2comms campaign http://is.gd/callit
+        - if (campaign_url)
+            i #callbullshit @clubsaustralia @banjosydney @page2comms campaign #{campaign_url}
         "
 
