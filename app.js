@@ -78,7 +78,7 @@ app.get('/step4', function(req, res){
   });
 });
 app.get('/networks', function(req, res,next){
-	path = "/home/michela/src/call-it/views/networks.html";
+	path = "views/networks.html";
 	res.sendfile(path, function(err){
 	  if (err) {
 	    next(err);
