@@ -77,9 +77,18 @@ app.get('/step4', function(req, res){
     title: 'Thanks',
   });
 });
-app.get('/networks', function(req, res){
-  res.sendfile('index');
+app.get('/networks', function(req, res,next){
+	path = "/home/michela/src/call-it/views/networks.html";
+	res.sendfile(path, function(err){
+	  if (err) {
+	    next(err);
+	  } else {
+	    console.log('transferred %s', path);
+	  }
+	});
 });
+
+
 app.get('/twitter', function(req, res){
   res.render('twitter', {
     title: 'Twitter',

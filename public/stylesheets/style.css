@@ -1,6 +1,6 @@
 body {
   background: url(/images/bg_tile.gif);
-  padding-left: 152px;
+//  padding-left: 152px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -34,6 +34,8 @@ p
 	background-color:#00613F;
 	border-radius: 10px 10px 10px 10px;
 	width:947px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .button a:link{
@@ -98,7 +100,7 @@ p
 
 #blurb {
 	position:relative;
-  padding-left: 152px;
+  	padding-left: 152px;
 	height:134px;
 	width:800px;
 //	margin:0 auto;	
@@ -113,4 +115,11 @@ p
 	animation-iteration-count: infinite;
 	animation-duration: 10s;
 	animation-direction: alternate;
+}
+.widget {
+	padding: 1em;
+	margin: 1em;
+	left: 1em;
+	position:relative;
+	float: none;
 }
