@@ -1,0 +1,120 @@
+body {
+  background: url(/images/bg_tile.gif);
+  padding-left: 152px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1
+{
+	font-family:"Helvetica Neue";
+	font-weight:bold;
+	font-size:18pt;
+	position:relative;
+	top:-0em;
+	color:#FFED00;
+	padding-left: 0.4em;
+	float: left;
+	text-transform:uppercase;
+}
+
+p
+{
+	font-family:"Helvetica Neue";
+	clear: both;
+	font-weight:bold;
+	font-size:14pt;
+	padding-left: 0.4em;
+	position:relative;
+	top:-0em;
+	color:rgb(255,255,255);
+}
+
+.panel
+{
+	background-color:#00613F;
+	border-radius: 10px 10px 10px 10px;
+	width:947px;
+}
+
+.button-next a:link{
+	color:#00613F; 
+	text-decoration:none;	
+}
+.button-next a:visited{
+	color:#669999; 
+	text-decoration:none;	
+}
+.button-next a:link{
+	color:#00613F; 
+	text-decoration:none;	
+}
+.button-next
+{
+	background-color:#00613F;
+	border-radius: 10px 10px 10px 10px;
+	font-family:"Helvetica Neue";
+	font-weight:bold;
+	float: right;
+	font-size:18pt;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-right: 1em;
+	position:relative;
+	top:0.7em;
+	left: 2em
+	color:#00613F;
+	background-color:#FFED00;
+//	box-shadow: #000000 2px 2px 1px;
+}
+.button-next:hover
+{
+	background-color:#00613F;
+	border-radius: 10px 10px 10px 10px;
+	font-family:"Helvetica Neue";
+	font-weight:bold;
+	float: right;
+	font-size:18pt;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-right: 1em;
+	position:relative;
+	top:0.7em;
+	left: 2em
+	color:#00613F;
+	background-color:#FFED00;
+	box-shadow: #000000 2px 2px 1px;
+}
+
+@keyframes FadeInOut {
+	0% {
+		opacity:1;
+	}
+	45% {
+		opacity:1;
+	}
+	55% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+#blurb {
+	position:relative;
+  padding-left: 152px;
+	height:134px;
+	width:800px;
+//	margin:0 auto;	
+}
+#blurb img {
+	position:absolute;
+	left:0;
+	
+#blurb img.top {
+	animation-name: FadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+}
