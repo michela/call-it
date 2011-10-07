@@ -28,12 +28,6 @@ app.configure('production', function(){
 
 // Routes
 
-app.dynamicHelpers({
-  scripts: function(req, res){
-    return ['jquery.js']; //this will be available in all views
-  }
-});
-
 app.get('/', function(req, res){
   res.render('index', {
     title: 'Call it',
@@ -50,28 +44,57 @@ app.get('/auto', function(req, res){
 	layout: 'frameset'
   });
 });
+app.get('/auto2', function(req, res){
+  res.render('auto', {
+    title: 'Update your networks',
+	layout: 'frameset-networks'
+  });
+});
+app.get('/auto3', function(req, res){
+  res.render('auto', {
+    title: 'Jam the petition',
+	layout: 'frameset-petition'
+  });
+});
 app.get('/step1', function(req, res){
   res.render('step1', {
     title: 'Contact your MP',
   });
 });
+
 app.get('/step2', function(req, res){
   res.render('step2', {
     title: 'Update your Networks',
-	layout: 'frameset-networks'
   });
 });
 app.get('/step3', function(req, res){
   res.render('step3', {
-    title: 'Jam the petition'
+    title: 'Jam the petition',
   });
 });
 app.get('/step4', function(req, res){
   res.render('step4', {
-    title: 'Thanks'
+    title: 'Thanks',
   });
 });
-
+app.get('/networks', function(req, res){
+  res.sendfile('index');
+});
+app.get('/twitter', function(req, res){
+  res.render('twitter', {
+    title: 'Twitter',
+  });
+});
+app.get('/plus', function(req, res){
+  res.render('plus', {
+    title: 'Google Plus',
+  });
+});
+app.get('/facebook', function(req, res){
+  res.render('facebook', {
+    title: 'Facebook',
+  });
+});
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

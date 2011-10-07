@@ -36,25 +36,24 @@ p
 	width:947px;
 }
 
-.button-next a:link{
+.button a:link{
 	color:#00613F; 
 	text-decoration:none;	
 }
-.button-next a:visited{
-	color:#669999; 
-	text-decoration:none;	
-}
-.button-next a:link{
+.button a:visited{
 	color:#00613F; 
 	text-decoration:none;	
 }
-.button-next
+.button a:link{
+	color:#00613F; 
+	text-decoration:none;	
+}
+.button
 {
 	background-color:#00613F;
 	border-radius: 10px 10px 10px 10px;
 	font-family:"Helvetica Neue";
 	font-weight:bold;
-	float: right;
 	font-size:18pt;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
@@ -66,23 +65,20 @@ p
 	background-color:#FFED00;
 //	box-shadow: #000000 2px 2px 1px;
 }
-.button-next:hover
+.button:hover
 {
-	background-color:#00613F;
-	border-radius: 10px 10px 10px 10px;
-	font-family:"Helvetica Neue";
-	font-weight:bold;
-	float: right;
-	font-size:18pt;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	margin-right: 1em;
-	position:relative;
-	top:0.7em;
-	left: 2em
-	color:#00613F;
-	background-color:#FFED00;
 	box-shadow: #000000 2px 2px 1px;
+}
+
+.button.button-network {
+	float: none;
+	top:0em;
+	left: 0.2em;
+	margin-right: 0.2em;
+}
+
+.button.button-next {
+	float: right;
 }
 
 @keyframes FadeInOut {
