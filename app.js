@@ -15,15 +15,19 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
-  app.use(express.static(__dirname + '/public'));
 });
 
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
+  var cdn = __dirname;
+  app.use(express.static(cdn + '/public'));
 });
 
 app.configure('production', function(){
   app.use(express.errorHandler()); 
+  var cdn = "http://campaign-callit.s3.amazonaws.com";
+  cdn = __dirname;
+  app.use(express.static(cdn + '/public'));
 });
 
 // CMS

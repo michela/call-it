@@ -114,7 +114,7 @@ p
 #blurb img {
 	position:absolute;
 	left:0;
-	
+}
 #blurb img.top {
 	animation-name: FadeInOut;
 	animation-timing-function: ease-in-out;
@@ -122,10 +122,12 @@ p
 	animation-duration: 10s;
 	animation-direction: alternate;
 }
-.widget {
+.social {
 	padding: 1em;
 	margin: 1em;
 	left: 1em;
 	position:relative;
-	float: none;
+	float: left;
+	padding-left: 0.4em;
+	color: #ffffff;
 }

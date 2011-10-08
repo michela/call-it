@@ -1,38 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 <link rel="stylesheet" href="/stylesheets/style.css"/>
+
 </head>
 <body>
 <div class="panel">
-<div id="twitter-root" class="widget">
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<a class="twitter-share-button"  href="https://twitter.com/share?text=%23callbullshit%20%40clubsaustralia%20%40banjosydney%20%40page2comms%20campaign&amp;url=http://is.gd/callit&amp;count=vertical">Tweet</a>
+	<div id="twitter" class="social">
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<a class="twitter-share-button"  href="https://twitter.com/share?text=%23callbullshit%20%40clubsaustralia%20%40banjosydney%20%40page2comms%20campaign&amp;url=http://is.gd/callit&amp;count=vertical">Tweet</a>
+	</div>
+
+	<div id="facebook" class="social">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#appId=41605911986&xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div class="fb-like" data-send="true" data-colorscheme="light" data-layout="box_count" data-width="450" data-show-faces="false"></div>
+
+	</div>
+
+	<div id="google" class="social">
+
+	<!-- Place this tag where you want the +1 button to render -->
+	<g:plusone size="tall" annotation="inline"></g:plusone>
+
+	<!-- Place this render call where appropriate -->
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+
+	</div>
 </div>
 
-<div id="fb-root" class="widget"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=41605911986&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-like widget" data-send="true" data-colorscheme="dark" data-layout="box_count" data-width="450" data-show-faces="false"></div>
-
-<div id="google-root" class="widget">
-<!-- Place this tag where you want the +1 button to render -->
-<g:plusone size="tall" annotation="inline"></g:plusone>
-
-<!-- Place this render call where appropriate -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-</div>
-</div>
 </body>
 </html>
