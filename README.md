@@ -3,6 +3,8 @@ call-it
 
 Wrapper app to assist with interacting and commenting on a 3rd party website
 
+http://is.gd/callit (alpha)
+
 Background
 ----------
 
@@ -15,8 +17,8 @@ Mandatory pre-commitment is a complicated issue I don't pretend to fully underst
 Clubs Australian anti-ad campaign inspired by 
 ---------------------------------------------
 
-its-unaustralian.com.au
-wontworkwillhurt.com.au
+http://its-unaustralian.com.au
+http://wontworkwillhurt.com.au
 
 Clubs Australia
 http://www.clubsaustralia.com.au/
