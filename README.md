@@ -8,7 +8,7 @@ http://is.gd/callit (alpha)
 Background
 ----------
 
-This app is the result of being presented with one too many "It's Un-australian" beer coasters, powers, television commercials and other campaign materials at the same time as hearing about family members putting their entire dole allowance into poker machines.
+This app is the result of being presented with one too many "It's Un-australian" beer coasters, posters, television commercials and other campaign materials at the same time as hearing about family members putting their entire dole allowance into poker machines.
 
 Mandatory pre-commitment is a complicated issue I don't pretend to fully understand but I know bullshit when I see it. 
 
