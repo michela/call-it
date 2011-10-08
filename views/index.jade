@@ -1,22 +1,28 @@
 script
-	head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js","/javascripts/jquery.animate-enhanced.min.js");
-	head.ready(function() {
-		$('.top').animate({ opacity: 0.25}, 2000, function() {
-				// Animation complete.
-		});
-	});
+    head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js","/javascripts/jquery.animate-enhanced.min.js");
+    head.ready(function() {
+        $('.top').animate({ opacity: 0.25}, 2000, function() {
+                // Animation complete.
+        });
+    });
 #top
-	#blurb
-		a(href="/callbullshit")
-			img(
-				src="/images/page0a_text.png"
-				class="bottom"
-			)
-			img(
-				src="/images/page0a_blank.png"
-				class="top"
-			)
-	a(href="/callbullshit")
-		img(
-			src="/images/page0b.png"
-		)
+    a(href="https://github.com/michela/call-it")
+      img(style="position: absolute; top: 0; right: 0; border: 0;",
+        src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png",
+        alt="Fork me on GitHub",
+        target="_blank"
+      )
+    #blurb
+        a(href="/callbullshit")
+            img(
+                src="/images/page0a_text.png"
+                class="bottom"
+            )
+            img(
+                src="/images/page0a_blank.png"
+                class="top"
+            )
+    a(href="/callbullshit")
+        img(
+            src="/images/page0b.png"
+        )
