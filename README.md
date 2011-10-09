@@ -65,4 +65,7 @@ casino 1.mp3 by milton.
 http://www.freesound.org/people/milton./sounds/69127/
 http://creativecommons.org/licenses/by-nc/3.0/
 
+coinso2.wav by lukaso
+http://www.freesound.org/people/lukaso/sounds/69683/
+
 

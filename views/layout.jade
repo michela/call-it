@@ -5,13 +5,69 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(type="text/javascript", src="/javascripts/head.min.js")
     script(type="text/javascript")
-      |  var _gaq = _gaq || [];
-      | _gaq.push(['_setAccount', 'UA-7601793-11']);
-      | _gaq.push(['_trackPageview']);
-      |
-      | (function() {
-      |  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      | ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      |var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      |})();
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-7601793-11']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    script(type="text/javascript")
+      head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js","/javascripts/jquery.animate-enhanced.min.js");
+      head.ready(function() {
+          function play_single_sound(id) {
+            document.getElementById(id).play();
+            console.log("play_single_sound");
+          }
+          $(".audio").click(function(){
+            play_single_sound('done');
+            console.log("clicked");
+            return false;
+          });
+          document.getElementById('done').addEventListener('ended',testListener,false);
+          function testListener(){
+            console.log("testListener");
+          }
+          $("#done").bind("ended", function(){
+            console.log("ended");
+            if ($(".audio").attr("target") == "_parent") {
+              window.parent.location = $(".audio").attr("href");
+            }
+            else {
+              window.location = $(".audio").attr("href");
+            }
+          });
+          $(".audio_last").click(function(){
+            play_single_sound('cashout');
+            return false;
+          });
+          $("#cashout").bind("ended", function(){
+            if ($(".audio_last").attr("target") == "_parent") {
+              window.parent.location = $(".audio_last").attr("href");
+            }
+            else {
+              window.location = $(".audio_last").attr("href");
+            }
+          });
+       });
   body!= body
+    audio(
+        id="done",
+        preload="auto"
+    )
+        source(src="/audio/done.mp3")
+        source(src="/audio/done.ogg")
+    audio(
+        id="casino",
+        preload="auto"
+    )
+        source(src="/audio/69127__milton__casino-1.mp3")
+        source(src="/audio/69127__milton__casino-1.ogg")
+    audio(
+        id="cashout",
+        preload="auto"
+    )
+        source(src="/audio/69683__lukaso__coinso2.mp3")
+        source(src="/audio/69683__lukaso__coinso2.ogg")
+
