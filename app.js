@@ -94,7 +94,7 @@ app.get('/networks', function(req, res,next){
 	  if (err) {
 	    next(err);
 	  } else {
-	    console.debug('transferred %s', path);
+	    console.log('transferred %s', path);
 	  }
 	});
 });
