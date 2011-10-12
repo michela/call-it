@@ -18,19 +18,19 @@ html
       head.ready(function() {
           function play_single_sound(id) {
             document.getElementById(id).play();
-            console.log("play_single_sound");
+            console.debug("play_single_sound");
           }
           $(".audio").click(function(){
             play_single_sound('done');
-            console.log("clicked");
+            console.debug("clicked");
             return false;
           });
           document.getElementById('done').addEventListener('ended',testListener,false);
           function testListener(){
-            console.log("testListener");
+            console.debug("testListener");
           }
           $("#done").bind("ended", function(){
-            console.log("ended");
+            console.debug("ended");
             if ($(".audio").attr("target") == "_parent") {
               window.parent.location = $(".audio").attr("href");
             }

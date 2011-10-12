@@ -123,11 +123,12 @@ p
 	animation-direction: alternate;
 }
 .social {
-	padding: 1em;
-	margin: 1em;
-	left: 1em;
-	position:relative;
-	float: left;
-	padding-left: 0.4em;
+	margin: auto;
+	padding-bottom: 1em;
+	padding-top: 1em;
 	color: #ffffff;
+}
+
+.addthis_default_style {
+	padding-left: 1em;	
 }
